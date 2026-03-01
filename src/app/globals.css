@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+body{
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes borderRotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.sonar-button {
+  --d: 5s;
+  --angle: 0deg;
+  --c1: #6473FF;
+  --c2: #000000;
+  --border-radius: 100px;
+
+  border: solid 2px transparent;
+  position: relative;
+  border-radius: var(--border-radius);
+  background-color: var(--c2);
+  color: white;
+  z-index: 1;
+}
+
+.sonar-button:hover{
+  border: solid 2px #ffffff18;
+  background-color: #ffffff18;
+}
+
+.sonar-button::before {
+  content: "";
+  position: absolute;
+
+  inset: -2px;
+
+  border-radius: inherit;
+  padding: 2px;
+
+  background: conic-gradient(
+    from var(--angle),
+    transparent 85%,
+    var(--c1) 90%
+  );
+
+  animation: borderRotate var(--d) linear infinite;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  z-index: -1;
+}
+
+.sonar-button:hover::before {
+  opacity: 1;
+}
+
+/* Nav Button 2 */
+.sonar-button2 {
+  --d: 5s;
+  --angle: 0deg;
+  --c1: #6473FF;
+  --c2: #3241c7;
+  --border-radius: 100px;
+
+  border: solid 2px transparent;
+  position: relative;
+  border-radius: var(--border-radius);
+  background-color: var(--c2);
+  color: white;
+  z-index: 1;
+}
+
+.sonar-button2:hover{
+  border: solid 2px var(--c2);
+  background-color: #2330aa;
+}
+.sonar-button2::before {
+  content: "";
+  position: absolute;
+
+  inset: -2px;
+
+  border-radius: inherit;
+  padding: 2px;
+
+  background: conic-gradient(
+    from var(--angle),
+    transparent 85%,
+    var(--c1) 90%
+  );
+
+  animation: borderRotate var(--d) linear infinite;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  z-index: -1;
+}
+
+.sonar-button2:hover::before {
+  opacity: 1;
+}

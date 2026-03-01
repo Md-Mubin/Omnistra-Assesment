@@ -27,8 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className={`fixed inset-0 z-90 bg-black/40 backdrop-blur-sm pointer-events-none
+      <div className={`fixed inset-0 z-90 bg-black/40 backdrop-blur-sm pointer-events-none
           transition-opacity duration-300 ${isSubmenuOpen ? "opacity-100" : "opacity-0"}`}
       />
       <div

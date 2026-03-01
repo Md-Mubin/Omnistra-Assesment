@@ -4,7 +4,7 @@ const CustomersMenuItem = () => {
     return (
         <div className="grid grid-cols-5 gap-4">
             {Nav_customer?.content?.map((item) => (
-                <div className="relative p-6 rounded-2xl bg-linear-to-b from-[#141416] to-[#0b0b0d] h-78.5 border border-white/5 hover:border-white/20 transition-all duration-300 hover:scale-[1.02] group cursor-pointer overflow-hidden">
+                <div key={item.id} className="relative p-6 rounded-2xl bg-linear-to-b from-[#141416] to-[#0b0b0d] h-78.5 border border-white/5 hover:border-white/20 transition-all duration-300 hover:scale-[1.02] group cursor-pointer overflow-hidden">
                     <div className="flex items-center w-full mb-2">
                         <span className="font-bold text-base tracking-tight" style={{ color: item.accent }}>{item.logo}</span>
                         {item.metric && (

@@ -31,29 +31,29 @@ export const Nav_product = {
     label: "PRODUCT",
     content: [
         {
-            id: 1,
+            id: "prevent",
             title: "Prevent",
             badge: "NEW",
             description: "Stop friendly fraud, block digital shoplifters & prevent the next chargeback before it happens."
         },
         {
-            id: 2,
+            id: "automation",
             title: "Automation",
             description: "Fully automated chargeback recovery with 4x ROI guarantee."
         },
         {
-            id: 3,
+            id: "alerts",
             title: "Alerts",
             description: "Cut 90% of chargebacks before they happen, powered by Visa and Mastercard."
         },
         {
-            id: 4,
+            id: "insights",
             title: "Insights",
             badge: "Free",
             description: "Get a bird's-eye view into your payments and chargebacks, all in a single, powerful dashboard."
         },
         {
-            id: 5,
+            id: "connect",
             title: "Connect",
             badge: "FOR PLATFORMS",
             description: "Integrate Chargeflow into your platform, either via Embedding, Whitelabel or API."
@@ -114,29 +114,29 @@ export const RES_NAV_ITEMS = [
         label: "PRODUCT",
         content: [
             {
-                id: 1,
+                id: "prevent",
                 title: "Prevent",
                 badge: "NEW",
                 description: "Stop friendly fraud, block digital shoplifters & prevent the next chargeback before it happens."
             },
             {
-                id: 2,
+                id: "automation",
                 title: "Automation",
                 description: "Fully automated chargeback recovery with 4x ROI guarantee."
             },
             {
-                id: 3,
+                id: "alerts",
                 title: "Alerts",
                 description: "Cut 90% of chargebacks before they happen, powered by Visa and Mastercard."
             },
             {
-                id: 4,
+                id: "insights",
                 title: "Insights",
                 badge: "Free",
                 description: "Get a bird's-eye view into your payments and chargebacks, all in a single, powerful dashboard."
             },
             {
-                id: 5,
+                id: "connect",
                 title: "Connect",
                 badge: "FOR PLATFORMS",
                 description: "Integrate Chargeflow into your platform, either via Embedding, Whitelabel or API."
@@ -179,19 +179,19 @@ export const RES_NAV_ITEMS = [
         label: "INTEGRATIONS",
         content: [
             {
-                id: 1,
+                id: 6,
                 title: "All Integration"
             },
             {
-                id: 2,
+                id: 7,
                 title: "Stripe"
             },
             {
-                id: 3,
+                id: 8,
                 title: "Shopify"
             },
             {
-                id: 4,
+                id: 9,
                 title: "Woocommerce"
             }
         ],
@@ -201,27 +201,27 @@ export const RES_NAV_ITEMS = [
         label: "RESOURCES",
         content: [
             {
-                id: 1,
+                id: 10,
                 title: "Blog"
             },
             {
-                id: 2,
+                id: 11,
                 title: "Webinars"
             },
             {
-                id: 3,
+                id: 12,
                 title: "Reports"
             },
             {
-                id: 4,
+                id: 13,
                 title: "Podcast"
             },
             {
-                id: 5,
+                id: 14,
                 title: "ROI Calculator"
             },
             {
-                id: 4,
+                id: 15,
                 title: "Reason Codes"
             }
         ],
@@ -231,23 +231,23 @@ export const RES_NAV_ITEMS = [
         label: "COMPANY",
         content: [
             {
-                id: 1,
+                id: 16,
                 title: "Who we are"
             },
             {
-                id: 2,
+                id: 17,
                 title: "Brand"
             },
             {
-                id: 3,
+                id: 18,
                 title: "Become a Partner"
             },
             {
-                id: 4,
+                id: 19,
                 title: "Careers"
             },
             {
-                id: 5,
+                id: 20,
                 title: "Contact us"
             }
         ]

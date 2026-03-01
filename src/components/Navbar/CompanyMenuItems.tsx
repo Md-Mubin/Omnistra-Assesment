@@ -8,7 +8,7 @@ const CompanyMenuItems = () => {
       <div className="grid grid-cols-2 gap-4">
         {/* 4 Big Cards */}
         {["Brand", "Careers", "Become a Partner", "Contact Us"].map((title, i) => (
-          <div className="relative rounded-3xl p-4 bg-linear-to-br from-[#0f1117] to-[#070707] border border-white/10 overflow-hidden group hover:border-white/20 transition">
+          <div key={i} className="relative rounded-3xl p-4 bg-linear-to-br from-[#0f1117] to-[#070707] border border-white/10 overflow-hidden group hover:border-white/20 transition">
             <div className="relative z-10">
               <h3 className="text-lg font-semibold text-white">{title}</h3>
             </div>

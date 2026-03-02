@@ -75,14 +75,16 @@ npm start
 
 Example:
 
-``` 
 ![Desktop View](./screenshot/screenshot_1.png)
+
 ![Desktop View](./screenshot/screenshot_2.png)
+
 ![Desktop View](./screenshot/screenshot_3.png)
+
 ![Desktop View](./screenshot/screenshot_4.png)
 
-![Interaction State](./screenshot/screenshot_4.png)
-```
+![Desktop View](./screenshot/screenshot_5.png)
+
 ------------------------------------------------------------------------
 
 ## 📬 Submission Details

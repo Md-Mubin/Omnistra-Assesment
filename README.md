@@ -24,6 +24,8 @@ The objective of this implementation was to demonstrate:
 
 ## 📂 Project Setup
 
+Open terminal/powershell/bash in the folder directory that you want to keep the peoject.
+
 ### 1️⃣ Clone the Repository
 
 ``` bash

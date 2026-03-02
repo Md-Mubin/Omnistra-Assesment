@@ -5,20 +5,20 @@ Technical Assessment** for **Omnistra (Private) Limited**.
 
 The objective of this implementation was to demonstrate:
 
--   Pixel-level UI accuracy\
--   Interaction fidelity\
--   Clean component architecture\
--   Responsive design across devices\
+-   Pixel-level UI accuracy
+-   Interaction fidelity
+-   Clean component architecture
+-   Responsive design across devices
 -   Maintainable and scalable code structure
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack & Frame Works
 
--   Next.js\
--   TypeScript\
--   Tailwind CSS\
--   Framer Motion\
+-   Next.js
+-   TypeScript
+-   Tailwind CSS
+-   Framer Motion
 
 ------------------------------------------------------------------------
 
@@ -27,8 +27,8 @@ The objective of this implementation was to demonstrate:
 ### 1️⃣ Clone the Repository
 
 ``` bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Md-Mubin/Omnistra-Assesment.git
+cd Omnistra-Assesment
 ```
 
 ### 2️⃣ Install Dependencies
@@ -60,41 +60,28 @@ npm start
 
 ------------------------------------------------------------------------
 
-## 📱 Responsiveness
-
-The application is fully responsive and tested across:
-
--   Desktop\
--   Tablet\
--   Mobile
-
-Tailwind CSS responsive utilities were used to ensure consistent layout
-behavior across breakpoints.
-
-------------------------------------------------------------------------
-
 ## 🎯 Key Implementation Highlights
 
--   Pixel-accurate layout implementation\
--   Reusable component structure\
--   Clean folder organization\
--   Responsive UI\
--   Interactive states (hover, transitions)\
+-   Pixel-accurate layout implementation
+-   Reusable component structure
+-   Clean folder organization
+-   Responsive UI
+-   Interactive states (hover, transitions)
 -   Maintainable and readable code
 
 ------------------------------------------------------------------------
 
 ## 📸 Screenshots
 
-Create a `/screenshots` folder in the root directory and place your
-images there.
-
 Example:
 
-``` md
-![Desktop View](./screenshots/desktop.png)
-![Mobile View](./screenshots/mobile.png)
-![Interaction State](./screenshots/hover.png)
+``` 
+![Desktop View](./screenshot/screenshot_1.png)
+![Desktop View](./screenshot/screenshot_2.png)
+![Desktop View](./screenshot/screenshot_3.png)
+![Desktop View](./screenshot/screenshot_4.png)
+
+![Interaction State](./screenshot/screenshot_4.png)
 ```
 ------------------------------------------------------------------------
 

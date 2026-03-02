@@ -1,5 +1,6 @@
 "use client"
 import { useScroll, useTransform, motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 import { useRef } from "react";
 
 const Integrations = () => {
@@ -26,6 +27,7 @@ const Integrations = () => {
 
   const middleIconScale = useTransform(scrollYProgress, [0.2, 0.3, 0.55, 0.63], [0.6, 1, 1, 0.6]);
   const middleIconOpacity = useTransform(scrollYProgress, [0.2, 0.3, 0.55, 0.625, 0.63], [0, 1, 1, 1, 0]);
+  const centerContentOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   const boxOpacity = useTransform(scrollYProgress, [0.625, 0.63], [0, 1]);
   const boxScaleX = useTransform(scrollYProgress, [0.63, 0.82], [0.08, 1]);
@@ -60,18 +62,41 @@ const Integrations = () => {
             <motion.div
               key={index}
               style={{ x, y, opacity, scale }}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-25.25 h-25.25 bg-white shadow-lg shadow-[#e8eeff] rounded-xl flex items-center justify-center text-sm font-semibold text-gray-700"
+              className="absolute z-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-25.25 h-25.25 bg-white shadow-lg shadow-[#e8eeff] rounded-xl flex items-center justify-center text-sm font-semibold text-gray-700"
             >
               <img src={icon.img} alt={`Icon ${index + 1}`} loading="lazy" className="p-3 object-contain" />
             </motion.div>
           );
         })}
+
+        {/* CENTER TEXT CONTENT */}
+        <motion.div
+          style={{ opacity: centerContentOpacity }}
+          className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-6 text-center pointer-events-none"
+        >
+          <h2 className="text-[#0d1f6e] text-4xl lg:text-5xl font-medium ">
+            One platform,<br />unlimited integrations
+          </h2>
+          <motion.button
+            style={{ pointerEvents: "auto" }}
+              className="relative z-10 overflow-hidden group flex items-center gap-2 bg-[#0143eb] border border-[#0143eb] cursor-pointer transition-colors text-white text-sm font-medium px-5 py-3 rounded-lg"
+          >
+              <span className="relative z-20 flex items-center gap-2 transition-colors duration-300 group-hover:text-[#0143eb]">
+                View all integrations
+                <span className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-xs">
+                  <ChevronRight size={14} className="text-[#0143eb] group-hover:text-[#0143eb]"/>
+                </span>
+              </span>
+              <span className="absolute top-1/2 left-[75%] -translate-y-1/2 w-10 h-10 rounded-full bg-white scale-0 group-hover:scale-1000 transition-transform duration-500 -z-10"/>
+          </motion.button>
+        </motion.div>
+
         {/* MIDDLE ICON */}
         <motion.img
           style={{ scale: middleIconScale, opacity: middleIconOpacity }}
           src="/middleIcon.png"
           alt="middleIcon"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 w-26 h-26 bg-blue-600 rounded-lg border border-[#00000055]"
+          className="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 w-26 h-26 bg-blue-600 rounded-lg border border-[#00000055]"
         />
         {/* EXPANDED BOX */}
         <motion.div

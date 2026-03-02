@@ -40,7 +40,7 @@ const Navbar = () => {
         <nav
           className={`transition-all duration-500 ease-in-out
             ${isScrolled || activeItem
-              ? "rounded-2xl bg-black/40 backdrop-blur-md shadow-sm w-[90%]"
+              ? "rounded-2xl bg-black/40 backdrop-blur-xl shadow-sm w-[90%]"
               : "bg-transparent shadow-none w-full"
             }`}
         >
@@ -99,7 +99,6 @@ const Navbar = () => {
             ? "max-h-100 opacity-100 duration-300"
             : "max-h-0 opacity-0 duration-300"}`}
           >
-            <div className="mx-4 border-t border-white/10" />
             <div className={`p-5 transition-all duration-150 ${isSubmenuOpen ? "visible" : "invisible"}`}>
               {activeItem === "products" && (
                 <ProductsMenuItems />
